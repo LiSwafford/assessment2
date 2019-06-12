@@ -97,7 +97,7 @@ module.exports =
 /*!************************!*\
   !*** ./ducks/store.js ***!
   \************************/
-/*! exports provided: actionTypes, reducer, getRooms, saveBooking, toggleChecked, initializeStore */
+/*! exports provided: actionTypes, reducer, getRooms, saveBooking, initializeStore */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -106,7 +106,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reducer", function() { return reducer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getRooms", function() { return getRooms; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "saveBooking", function() { return saveBooking; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toggleChecked", function() { return toggleChecked; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initializeStore", function() { return initializeStore; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux */ "redux");
@@ -141,8 +140,8 @@ var exampleInitialState = {
 };
 var actionTypes = {
   GET_ROOMS: "GET_ROOMS",
-  SAVE_BOOKING: "SAVE_BOOKING",
-  TOGGLE_CHECKED: "TOGGLE_CHECKED"
+  SAVE_BOOKING: "SAVE_BOOKING" // TOGGLE_CHECKED: "TOGGLE_CHECKED"
+
 }; // REDUCERS
 
 var reducer = function reducer() {
@@ -155,11 +154,11 @@ var reducer = function reducer() {
 
     case actionTypes.GET_ROOMS:
       return state;
-
-    case actionTypes.TOGGLE_CHECKED:
-      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
-        rooms: action.payload
-      });
+    // case actionTypes.TOGGLE_CHECKED:
+    //   return {
+    //     ...state,
+    //     rooms: action.payload
+    //   };
 
     case actionTypes.SAVE_BOOKING:
       return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
@@ -172,25 +171,23 @@ var reducer = function reducer() {
 }; // ACTIONS
 
 var getRooms = function getRooms() {
-  // console.log("hit here action");
   return {
     type: actionTypes.GET_ROOMS
   };
 };
 var saveBooking = function saveBooking(rooms) {
-  // console.log("hit here action");
   return {
     type: actionTypes.SAVE_BOOKING,
     payload: rooms
   };
-};
-function toggleChecked(newRooms) {
-  // console.log("action 2: ", newRooms);
-  return {
-    type: actionTypes.TOGGLE_CHECKED,
-    payload: newRooms
-  };
-}
+}; // export function toggleChecked(newRooms) {
+//   // console.log("action 2: ", newRooms);
+//   return {
+//     type: actionTypes.TOGGLE_CHECKED,
+//     payload: newRooms
+//   };
+// }
+
 function initializeStore() {
   var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : exampleInitialState;
   return Object(redux__WEBPACK_IMPORTED_MODULE_1__["createStore"])(reducer, initialState, Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_1__["applyMiddleware"])()));

@@ -131,7 +131,13 @@ class BookingForm extends Component {
 }
 
 const mapDispatchToProps = dispatch =>
-  bindActionCreators({ saveBooking, toggleChecked, getRooms }, dispatch);
+  bindActionCreators(
+    {
+      saveBooking
+      // toggleChecked, getRooms
+    },
+    dispatch
+  );
 
 const mapStateToProps = state => {
   return {
