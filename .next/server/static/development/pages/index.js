@@ -102,23 +102,26 @@ module.exports =
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! redux */ "redux");
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _ducks_store__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../ducks/store */ "./ducks/store.js");
-/* harmony import */ var _Summary__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Summary */ "./components/Summary.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! redux */ "redux");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _ducks_store__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../ducks/store */ "./ducks/store.js");
+/* harmony import */ var _Summary__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Summary */ "./components/Summary.js");
+
 
 
 
@@ -137,27 +140,27 @@ var _jsxFileName = "/Users/liswafford/Documents/coding/HiltonFinised/assessment2
 var BookingForm =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(BookingForm, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(BookingForm, _Component);
 
   function BookingForm() {
     var _getPrototypeOf2;
 
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, BookingForm);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, BookingForm);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(BookingForm)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(BookingForm)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      localRooms: _this.props.rooms || [],
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "state", {
+      localRooms: [],
       showSummary: false
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "onReset", function () {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "onReset", function () {
       var newRooms = _this.props.rooms.slice();
 
       for (var i = 0; i < newRooms.length; i++) {
@@ -168,7 +171,7 @@ function (_Component) {
       }
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "toggleIsChecked", function (e) {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "toggleIsChecked", function (e) {
       var id = e.target.id;
       var isChecked = e.target.checked;
 
@@ -193,11 +196,10 @@ function (_Component) {
 
       _this.setState({
         localRooms: newRooms
-      }); // this.props.toggleChecked(newRooms);
-
+      });
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleCount", function (id, e) {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "handleCount", function (id, e) {
       console.log("count", id, e.target.name, e.target.value);
       var targetName = e.target.name;
       var value = e.target.value;
@@ -215,79 +217,90 @@ function (_Component) {
 
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleSubmit", function () {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "handleSubmit", function () {
       _this.props.saveBooking(_this.state.localRooms);
 
       _this.setState({
         showSummary: true
       }, function () {
         alert("Rooms successfully booked!");
+        localStorage.setItem("localRooms", _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(_this.state.localRooms));
       });
     });
 
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(BookingForm, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(BookingForm, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var preData = JSON.parse(localStorage.getItem("localRooms")) || this.props.rooms;
+      this.setState({
+        localRooms: preData
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this2 = this;
 
-      var roomsToDisplay = this.props.rooms.map(function (room) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Wrapper, {
+      var roomsToDisplay = this.state.localRooms.map(function (room) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Wrapper, {
           key: room.roomId,
+          active: room.checked,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 71
+            lineNumber: 83
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Title, {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Title, {
+          active: room.checked,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 72
+            lineNumber: 84
           },
           __self: this
-        }, room.roomId > 1 && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
+        }, room.roomId > 1 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
           type: "checkbox",
           id: room.roomId,
           checked: room.checked,
           onChange: _this2.toggleIsChecked,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 74
-          },
-          __self: this
-        }), " ", "Room ", room.roomId, " "), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BoxContent, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 83
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BoxUnit, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 84
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Paragraph, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 85
-          },
-          __self: this
-        }, "Adults ", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", {
-          __source: {
-            fileName: _jsxFileName,
             lineNumber: 86
           },
           __self: this
-        }), " (18+)"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(SelectWrapper, {
+        }), " ", "Room ", room.roomId, " "), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(BoxContent, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 88
+            lineNumber: 95
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Select, {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(BoxUnit, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 96
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Paragraph, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 97
+          },
+          __self: this
+        }, "Adults ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 98
+          },
+          __self: this
+        }), " (18+)"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(SelectWrapper, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 100
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Select, {
           name: "adults",
           value: room.adults,
           disabled: !room.checked,
@@ -296,54 +309,54 @@ function (_Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 89
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("option", {
-          value: "1",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 95
-          },
-          __self: this
-        }, "1"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("option", {
-          value: "2",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 96
-          },
-          __self: this
-        }, "2")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(DownArrow, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 98
-          },
-          __self: this
-        }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BoxUnit, {
-          __source: {
-            fileName: _jsxFileName,
             lineNumber: 101
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Paragraph, {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
+          value: "1",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 102
+            lineNumber: 107
           },
           __self: this
-        }, "Children ", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", {
+        }, "1"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
+          value: "2",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 103
+            lineNumber: 108
           },
           __self: this
-        }), " (0-17)"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(SelectWrapper, {
+        }, "2")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(DownArrow, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 105
+            lineNumber: 110
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Select, {
+        }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(BoxUnit, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 113
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Paragraph, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 114
+          },
+          __self: this
+        }, "Children ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 115
+          },
+          __self: this
+        }), " (0-17)"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(SelectWrapper, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 117
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Select, {
           name: "children",
           value: room.children,
           disabled: !room.checked,
@@ -352,55 +365,56 @@ function (_Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 106
+            lineNumber: 118
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("option", {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
           value: "0",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 112
+            lineNumber: 124
           },
           __self: this
-        }, "0"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("option", {
+        }, "0"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
           value: "1",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 113
+            lineNumber: 125
           },
           __self: this
-        }, "1"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("option", {
+        }, "1"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
           value: "2",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 114
+            lineNumber: 126
           },
           __self: this
-        }, "2")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(DownArrow, {
+        }, "2")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(DownArrow, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 116
+            lineNumber: 128
           },
           __self: this
         })))));
       });
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Container, {
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_8___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Container, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
+          lineNumber: 137
         },
         __self: this
-      }, roomsToDisplay), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Button, {
+      }, roomsToDisplay), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Button, {
         onClick: this.handleSubmit,
+        localRooms: this.state.localRooms,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126
+          lineNumber: 138
         },
         __self: this
-      }, " Submit"), this.state.showSummary && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Summary__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }, " ", "Submit"), this.state.showSummary && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Summary__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 142
         },
         __self: this
       }));
@@ -408,11 +422,11 @@ function (_Component) {
   }]);
 
   return BookingForm;
-}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_8__["Component"]);
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-  return Object(redux__WEBPACK_IMPORTED_MODULE_10__["bindActionCreators"])({
-    saveBooking: _ducks_store__WEBPACK_IMPORTED_MODULE_11__["saveBooking"] // toggleChecked, getRooms
+  return Object(redux__WEBPACK_IMPORTED_MODULE_11__["bindActionCreators"])({
+    saveBooking: _ducks_store__WEBPACK_IMPORTED_MODULE_12__["saveBooking"] // add more functions if needed
 
   }, dispatch);
 };
@@ -423,44 +437,50 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_9__["connect"])(mapStateToProps, mapDispatchToProps)(BookingForm));
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.div.withConfig({
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_10__["connect"])(mapStateToProps, mapDispatchToProps)(BookingForm));
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div.withConfig({
   displayName: "BookingForm__Container",
   componentId: "zjckro-0"
 })(["display:flex;flex-direction:row;justify-content:space-around;width:630px;"]);
-var Button = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.button.withConfig({
+var Button = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.button.withConfig({
   displayName: "BookingForm__Button",
   componentId: "zjckro-1"
 })(["background:lightGrey;margin-top:20px;padding:5px;font-size:16px;"]);
-var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.section.withConfig({
+var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.section.withConfig({
   displayName: "BookingForm__Wrapper",
   componentId: "zjckro-2"
-})(["width:130px;border:3px solid #eee;border-radius:8px;padding-bottom:10px;"]);
-var BoxContent = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.div.withConfig({
+})(["width:130px;border:3px solid #eee;border-radius:8px;padding-bottom:10px;border-color:", ";background-color:", ";"], function (props) {
+  return props.active ? "#E7E7E7" : "#CCD0DC";
+}, function (props) {
+  return props.active ? "white" : "#DBDBE3";
+});
+var BoxContent = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div.withConfig({
   displayName: "BookingForm__BoxContent",
   componentId: "zjckro-3"
 })(["display:flex;flex-direction:row;justify-content:space-between;padding:0 5px;"]);
-var BoxUnit = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.div.withConfig({
+var BoxUnit = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div.withConfig({
   displayName: "BookingForm__BoxUnit",
   componentId: "zjckro-4"
 })([""]);
-var Title = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.div.withConfig({
+var Title = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div.withConfig({
   displayName: "BookingForm__Title",
   componentId: "zjckro-5"
-})(["background:#eee;padding:5px;"]);
-var Paragraph = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.p.withConfig({
+})(["padding:5px;background-color:", ";"], function (props) {
+  return props.active ? "#eee" : "#DBDBE3";
+});
+var Paragraph = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.p.withConfig({
   displayName: "BookingForm__Paragraph",
   componentId: "zjckro-6"
 })([""]);
-var SelectWrapper = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.div.withConfig({
+var SelectWrapper = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div.withConfig({
   displayName: "BookingForm__SelectWrapper",
   componentId: "zjckro-7"
 })(["position:relative;display:inline-block;width:40px;"]);
-var Select = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.select.withConfig({
+var Select = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.select.withConfig({
   displayName: "BookingForm__Select",
   componentId: "zjckro-8"
 })(["display:inline-block;width:100%;cursor:pointer;padding:5px 10px;border:1px solid grey;border-radius:0;appearance:none;-webkit-appearance:none;-moz-appearance:none;"]);
-var DownArrow = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.div.withConfig({
+var DownArrow = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div.withConfig({
   displayName: "BookingForm__DownArrow",
   componentId: "zjckro-9"
 })(["position:absolute;top:9px;right:5px;pointer-events:none;border-style:solid;border-width:8px 5px 0 5px;border-color:grey transparent transparent transparent;"]);
@@ -547,7 +567,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var exampleInitialState = {
+var myInitialState = {
   rooms: [{
     roomId: 1,
     adults: 1,
@@ -577,7 +597,7 @@ var actionTypes = {
 }; // REDUCERS
 
 var reducer = function reducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : exampleInitialState;
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : myInitialState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
   switch (action.type) {
@@ -621,9 +641,20 @@ var saveBooking = function saveBooking(rooms) {
 // }
 
 function initializeStore() {
-  var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : exampleInitialState;
+  var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : myInitialState;
   return Object(redux__WEBPACK_IMPORTED_MODULE_1__["createStore"])(reducer, initialState, Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_1__["applyMiddleware"])()));
 }
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "core-js/library/fn/json/stringify");
 
 /***/ }),
 
@@ -1097,6 +1128,17 @@ var mapStateToProps = function mapStateToProps(state) {
 
 module.exports = __webpack_require__(/*! /Users/liswafford/Documents/coding/HiltonFinised/assessment2/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "core-js/library/fn/json/stringify":
+/*!****************************************************!*\
+  !*** external "core-js/library/fn/json/stringify" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/json/stringify");
 
 /***/ }),
 

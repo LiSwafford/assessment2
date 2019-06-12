@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var exampleInitialState = {
+var myInitialState = {
   rooms: [{
     roomId: 1,
     adults: 1,
@@ -51,7 +51,7 @@ var actionTypes = {
 }; // REDUCERS
 
 var reducer = function reducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : exampleInitialState;
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : myInitialState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
   switch (action.type) {
@@ -95,7 +95,7 @@ var saveBooking = function saveBooking(rooms) {
 // }
 
 function initializeStore() {
-  var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : exampleInitialState;
+  var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : myInitialState;
   return Object(redux__WEBPACK_IMPORTED_MODULE_1__["createStore"])(reducer, initialState, Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_1__["applyMiddleware"])()));
 }
 

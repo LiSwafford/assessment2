@@ -2,14 +2,23 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { saveBooking, toggleChecked, getRooms } from "../ducks/store";
+import { saveBooking } from "../ducks/store";
 import Summary from "./Summary";
 
 class BookingForm extends Component {
   state = {
-    localRooms: this.props.rooms || [],
+    localRooms: [],
     showSummary: false
   };
+
+  componentDidMount() {
+    const preData =
+      JSON.parse(localStorage.getItem("localRooms")) || this.props.rooms;
+    this.setState({
+      localRooms: preData
+    });
+  }
+
   onReset = () => {
     let newRooms = this.props.rooms.slice();
     for (let i = 0; i < newRooms.length; i++) {
@@ -38,7 +47,6 @@ class BookingForm extends Component {
     this.setState({
       localRooms: newRooms
     });
-    // this.props.toggleChecked(newRooms);
   };
 
   handleCount = (id, e) => {
@@ -61,15 +69,19 @@ class BookingForm extends Component {
       },
       () => {
         alert("Rooms successfully booked!");
+        localStorage.setItem(
+          "localRooms",
+          JSON.stringify(this.state.localRooms)
+        );
       }
     );
   };
 
   render() {
-    const roomsToDisplay = this.props.rooms.map(room => {
+    const roomsToDisplay = this.state.localRooms.map(room => {
       return (
-        <Wrapper key={room.roomId}>
-          <Title>
+        <Wrapper key={room.roomId} active={room.checked}>
+          <Title active={room.checked}>
             {room.roomId > 1 && (
               <input
                 type="checkbox"
@@ -123,7 +135,10 @@ class BookingForm extends Component {
     return (
       <>
         <Container>{roomsToDisplay}</Container>
-        <Button onClick={this.handleSubmit}> Submit</Button>
+        <Button onClick={this.handleSubmit} localRooms={this.state.localRooms}>
+          {" "}
+          Submit
+        </Button>
         {this.state.showSummary && <Summary />}
       </>
     );
@@ -134,7 +149,7 @@ const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
       saveBooking
-      // toggleChecked, getRooms
+      // add more functions if needed
     },
     dispatch
   );
@@ -168,6 +183,8 @@ const Wrapper = styled.section`
   border: 3px solid #eee;
   border-radius: 8px;
   padding-bottom: 10px;
+  border-color: ${props => (props.active ? "#E7E7E7" : "#CCD0DC")};
+  background-color: ${props => (props.active ? "white" : "#DBDBE3")};
 `;
 
 const BoxContent = styled.div`
@@ -178,8 +195,8 @@ const BoxContent = styled.div`
 `;
 const BoxUnit = styled.div``;
 const Title = styled.div`
-  background: #eee;
   padding: 5px;
+  background-color: ${props => (props.active ? "#eee" : "#DBDBE3")};
 `;
 const Paragraph = styled.p``;
 const SelectWrapper = styled.div`

@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 
-const exampleInitialState = {
+const myInitialState = {
   rooms: [
     {
       roomId: 1,
@@ -37,7 +37,7 @@ export const actionTypes = {
 };
 
 // REDUCERS
-export const reducer = (state = exampleInitialState, action) => {
+export const reducer = (state = myInitialState, action) => {
   switch (action.type) {
     case actionTypes.TICK:
       return state;
@@ -75,7 +75,7 @@ export const saveBooking = rooms => {
 //   };
 // }
 
-export function initializeStore(initialState = exampleInitialState) {
+export function initializeStore(initialState = myInitialState) {
   return createStore(
     reducer,
     initialState,
