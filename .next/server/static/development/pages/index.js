@@ -93,127 +93,6 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/Booking.js":
-/*!*******************************!*\
-  !*** ./components/Booking.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _ducks_store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ducks/store */ "./ducks/store.js");
-/* harmony import */ var next_redux_wrapper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next-redux-wrapper */ "next-redux-wrapper");
-/* harmony import */ var next_redux_wrapper__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_redux_wrapper__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _ducks_action__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ducks/action */ "./ducks/action.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _BookingForm__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./BookingForm */ "./components/BookingForm.js");
-
-
-
-
-
-
-var _jsxFileName = "/Users/liswafford/Documents/coding/HiltonFinised/assessment2/components/Booking.js";
-
-function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background: lightGrey;\n  margin-top: 20px;\n  padding: 5px;\n  font-size: 16px;\n"]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])([""]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-
-
-
-
-
-
-var Booking =
-/*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Booking, _Component);
-
-  function Booking() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Booking);
-
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Booking).apply(this, arguments));
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Booking, [{
-    key: "render",
-    value: function render() {
-      // console.log(this.props.store.getState());
-      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(Wrapper, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_BookingForm__WEBPACK_IMPORTED_MODULE_11__["default"], {
-        rooms: this.props.store.getState().rooms,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(Button, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        },
-        __self: this
-      }, "Submit"));
-    }
-  }]);
-
-  return Booking;
-}(react__WEBPACK_IMPORTED_MODULE_9__["Component"]);
-
-var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-  return {
-    saveBooking: function saveBooking() {
-      return dispatch(_ducks_action__WEBPACK_IMPORTED_MODULE_8__["default"].saveBooking());
-    }
-  };
-};
-
-var mapStateToProps = function mapStateToProps(state) {
-  console.log(state);
-  return {
-    rooms: state.rooms
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (next_redux_wrapper__WEBPACK_IMPORTED_MODULE_7___default()(_ducks_store__WEBPACK_IMPORTED_MODULE_6__["initStore"], mapStateToProps, mapDispatchToProps)(Booking));
-var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_10___default.a.section(_templateObject());
-var Button = styled_components__WEBPACK_IMPORTED_MODULE_10___default.a.button(_templateObject2());
-
-/***/ }),
-
 /***/ "./components/BookingForm.js":
 /*!***********************************!*\
   !*** ./components/BookingForm.js ***!
@@ -228,11 +107,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! redux */ "redux");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _ducks_store__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../ducks/store */ "./ducks/store.js");
+/* harmony import */ var _Summary__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Summary */ "./components/Summary.js");
+
+
 
 
 
@@ -241,8 +130,18 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "/Users/liswafford/Documents/coding/HiltonFinised/assessment2/components/BookingForm.js";
 
-function _templateObject9() {
+function _templateObject10() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  position: absolute;\n  top: 9px;\n  right: 5px;\n  pointer-events: none;\n  border-style: solid;\n  border-width: 8px 5px 0 5px;\n  border-color: grey transparent transparent transparent;\n"]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: inline-block;\n  width: 100%;\n  cursor: pointer;\n  padding: 5px 10px;\n  border: 1px solid grey;\n  border-radius: 0;\n  appearance: none;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n"]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -252,7 +151,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: inline-block;\n  width: 100%;\n  cursor: pointer;\n  padding: 5px 10px;\n  border: 1px solid grey;\n  border-radius: 0;\n  appearance: none;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  position: relative;\n  display: inline-block;\n  width: 40px;\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -262,7 +161,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  position: relative;\n  display: inline-block;\n  width: 40px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])([""]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -272,7 +171,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])([""]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background: #eee;\n  padding: 5px;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -282,7 +181,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background: #eee;\n  padding: 5px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])([""]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -292,7 +191,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])([""]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 0 5px;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -302,7 +201,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 0 5px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 130px;\n  border: 3px solid #eee;\n  border-radius: 8px;\n  padding-bottom: 10px;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -312,7 +211,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 130px;\n  border: 3px solid #eee;\n  border-radius: 8px;\n  padding-bottom: 10px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background: lightGrey;\n  margin-top: 20px;\n  padding: 5px;\n  font-size: 16px;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -334,227 +233,441 @@ function _templateObject() {
 
 
 
+
+
+
+
 var BookingForm =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(BookingForm, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(BookingForm, _Component);
 
   function BookingForm() {
+    var _getPrototypeOf2;
+
+    var _this;
+
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, BookingForm);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(BookingForm).apply(this, arguments));
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(BookingForm)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "state", {
+      localRooms: _this.props.rooms || [],
+      showSummary: false
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "onReset", function () {
+      var newRooms = _this.props.rooms.slice();
+
+      for (var i = 0; i < newRooms.length; i++) {
+        if (!newRooms[i].checked) {
+          newRooms[i].adults = 1;
+          newRooms[i].children = 0;
+        }
+      }
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "toggleIsChecked", function (e) {
+      var id = e.target.id;
+      var isChecked = e.target.checked;
+
+      var newRooms = _this.props.rooms.slice();
+
+      var index = newRooms.findIndex(function (item) {
+        return item.roomId === +id;
+      });
+      newRooms[index].checked = isChecked;
+
+      for (var j = 1; j < newRooms.length; j++) {
+        if (j < index && newRooms[j].checked === false) {
+          newRooms[j].checked = isChecked;
+          newRooms[index].checked = true;
+        } else if (j > index && newRooms[j].checked === true) {
+          newRooms[j].checked = isChecked;
+          newRooms[index].checked = false;
+        }
+      }
+
+      _this.onReset();
+
+      _this.setState({
+        localRooms: newRooms
+      }); // this.props.toggleChecked(newRooms);
+
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "handleCount", function (id, e) {
+      console.log("count", id, e.target.name, e.target.value);
+      var targetName = e.target.name;
+      var value = e.target.value;
+
+      var newRooms = _this.props.rooms.slice();
+
+      var i = newRooms.findIndex(function (item) {
+        return item.roomId === +id;
+      });
+      newRooms[i][targetName] = +value;
+
+      _this.setState({
+        localRooms: newRooms
+      }); // this.props.toggleChecked(newRooms);
+
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "handleSubmit", function () {
+      _this.props.saveBooking(_this.state.localRooms);
+
+      _this.setState({
+        showSummary: true
+      }, function () {
+        alert("Rooms successfully booked!");
+      });
+    });
+
+    return _this;
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(BookingForm, [{
     key: "render",
     value: function render() {
-      console.log(this.props);
+      var _this2 = this;
+
       var roomsToDisplay = this.props.rooms.map(function (room) {
-        return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Wrapper, {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Wrapper, {
           key: room.roomId,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 9
+            lineNumber: 71
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Title, {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Title, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 10
+            lineNumber: 72
           },
           __self: this
-        }, room.roomId === 1 ? null : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("input", {
+        }, room.roomId > 1 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
           type: "checkbox",
-          defaultChecked: room.checked,
+          id: room.roomId,
+          checked: room.checked,
+          onChange: _this2.toggleIsChecked,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 12
+            lineNumber: 74
           },
           __self: this
-        }), " ", "Room ", room.roomId, " "), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(BoxContent, {
+        }), " ", "Room ", room.roomId, " "), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(BoxContent, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 16
+            lineNumber: 83
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(BoxUnit, {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(BoxUnit, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 17
+            lineNumber: 84
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Paragraph, {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Paragraph, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 18
+            lineNumber: 85
           },
           __self: this
-        }, "Adults ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("br", {
+        }, "Adults ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 19
+            lineNumber: 86
           },
           __self: this
-        }), " (18+)"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(SelectWrapper, {
+        }), " (18+)"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(SelectWrapper, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 21
+            lineNumber: 88
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Select, {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Select, {
+          name: "adults",
           value: room.adults,
           disabled: !room.checked,
+          onChange: function onChange(e) {
+            return _this2.handleCount(room.roomId, e);
+          },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 22
+            lineNumber: 89
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("option", {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
           value: "1",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 23
+            lineNumber: 95
           },
           __self: this
-        }, "1"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("option", {
+        }, "1"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
           value: "2",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 24
+            lineNumber: 96
           },
           __self: this
-        }, "2")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(DownArrow, {
+        }, "2")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(DownArrow, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 26
+            lineNumber: 98
           },
           __self: this
-        }))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(BoxUnit, {
+        }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(BoxUnit, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 29
+            lineNumber: 101
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Paragraph, {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Paragraph, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 30
+            lineNumber: 102
           },
           __self: this
-        }, "Children ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("br", {
+        }, "Children ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 31
+            lineNumber: 103
           },
           __self: this
-        }), " (0-17)"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(SelectWrapper, {
+        }), " (0-17)"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(SelectWrapper, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 33
+            lineNumber: 105
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Select, {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Select, {
+          name: "children",
           value: room.children,
           disabled: !room.checked,
+          onChange: function onChange(e) {
+            return _this2.handleCount(room.roomId, e);
+          },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 34
+            lineNumber: 106
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("option", {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
           value: "0",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 35
+            lineNumber: 112
           },
           __self: this
-        }, "0"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("option", {
+        }, "0"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
           value: "1",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 36
+            lineNumber: 113
           },
           __self: this
-        }, "1"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("option", {
+        }, "1"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("option", {
           value: "2",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 37
+            lineNumber: 114
           },
           __self: this
-        }, "2")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(DownArrow, {
+        }, "2")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(DownArrow, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 39
+            lineNumber: 116
           },
           __self: this
         })))));
       });
-      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Container, {
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_8___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Container, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 125
         },
         __self: this
-      }, roomsToDisplay);
+      }, roomsToDisplay), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Button, {
+        onClick: this.handleSubmit,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 126
+        },
+        __self: this
+      }, " Submit"), this.state.showSummary && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Summary__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 127
+        },
+        __self: this
+      }));
     }
   }]);
 
   return BookingForm;
-}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_8__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (BookingForm);
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.div(_templateObject());
-var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.section(_templateObject2());
-var BoxContent = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.div(_templateObject3());
-var BoxUnit = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.div(_templateObject4());
-var Title = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.div(_templateObject5());
-var Paragraph = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.p(_templateObject6());
-var SelectWrapper = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.div(_templateObject7());
-var Select = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.select(_templateObject8());
-var DownArrow = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.div(_templateObject9());
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return Object(redux__WEBPACK_IMPORTED_MODULE_11__["bindActionCreators"])({
+    saveBooking: _ducks_store__WEBPACK_IMPORTED_MODULE_12__["saveBooking"],
+    toggleChecked: _ducks_store__WEBPACK_IMPORTED_MODULE_12__["toggleChecked"],
+    getRooms: _ducks_store__WEBPACK_IMPORTED_MODULE_12__["getRooms"]
+  }, dispatch);
+};
 
-/***/ }),
-
-/***/ "./ducks/action.js":
-/*!*************************!*\
-  !*** ./ducks/action.js ***!
-  \*************************/
-/*! exports provided: SAVE_BOOKING, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SAVE_BOOKING", function() { return SAVE_BOOKING; });
-var SAVE_BOOKING = "SAVE_BOOKING";
-
-var saveBooking = function saveBooking(rooms) {
+var mapStateToProps = function mapStateToProps(state) {
   return {
-    type: "SAVE_BOOKING",
-    payload: rooms
+    rooms: state.rooms
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = ({
-  saveBooking: saveBooking
-});
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_10__["connect"])(mapStateToProps, mapDispatchToProps)(BookingForm));
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div(_templateObject());
+var Button = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.button(_templateObject2());
+var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.section(_templateObject3());
+var BoxContent = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div(_templateObject4());
+var BoxUnit = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div(_templateObject5());
+var Title = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div(_templateObject6());
+var Paragraph = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.p(_templateObject7());
+var SelectWrapper = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div(_templateObject8());
+var Select = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.select(_templateObject9());
+var DownArrow = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div(_templateObject10());
 
 /***/ }),
 
-/***/ "./ducks/reducer.js":
-/*!**************************!*\
-  !*** ./ducks/reducer.js ***!
-  \**************************/
+/***/ "./components/Summary.js":
+/*!*******************************!*\
+  !*** ./components/Summary.js ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
+
+
+var _jsxFileName = "/Users/liswafford/Documents/coding/HiltonFinised/assessment2/components/Summary.js";
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])([""]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+var Summary =
+/*#__PURE__*/
+function (_Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Summary, _Component);
+
+  function Summary() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Summary);
+
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Summary).apply(this, arguments));
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Summary, [{
+    key: "render",
+    value: function render() {
+      // console.log(this.props);
+      var confirmation = this.props.rooms.map(function (room) {
+        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 11
+          },
+          __self: this
+        }, room.checked && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          },
+          __self: this
+        }, "Room ", room.roomId, ": ", room.adults, " adults, ", room.children, " ", "children."));
+      });
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Wrapper, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, confirmation);
+    }
+  }]);
+
+  return Summary;
+}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    rooms: state.rooms
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps)(Summary));
+var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.section(_templateObject()); // const Button = styled.button`
+//   background: lightGrey;
+//   margin-top: 20px;
+//   padding: 5px;
+//   font-size: 16px;
+// `;
+// const ConfirmInfo = styled.div``;
+
+/***/ }),
+
+/***/ "./ducks/store.js":
+/*!************************!*\
+  !*** ./ducks/store.js ***!
+  \************************/
+/*! exports provided: actionTypes, reducer, getRooms, saveBooking, toggleChecked, initializeStore */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actionTypes", function() { return actionTypes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reducer", function() { return reducer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getRooms", function() { return getRooms; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "saveBooking", function() { return saveBooking; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toggleChecked", function() { return toggleChecked; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initializeStore", function() { return initializeStore; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _action__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./action */ "./ducks/action.js");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux */ "redux");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-devtools-extension */ "redux-devtools-extension");
+/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__);
 
 
-var initialState = {
+
+var exampleInitialState = {
   rooms: [{
     roomId: 1,
     adults: 1,
@@ -577,13 +690,29 @@ var initialState = {
     checked: false
   }]
 };
+var actionTypes = {
+  GET_ROOMS: "GET_ROOMS",
+  SAVE_BOOKING: "SAVE_BOOKING",
+  TOGGLE_CHECKED: "TOGGLE_CHECKED"
+}; // REDUCERS
 
 var reducer = function reducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : exampleInitialState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
   switch (action.type) {
-    case _action__WEBPACK_IMPORTED_MODULE_1__["SAVE_BOOKING"]:
+    case actionTypes.TICK:
+      return state;
+
+    case actionTypes.GET_ROOMS:
+      return state;
+
+    case actionTypes.TOGGLE_CHECKED:
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
+        rooms: action.payload
+      });
+
+    case actionTypes.SAVE_BOOKING:
       return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
         rooms: action.payload
       });
@@ -591,37 +720,32 @@ var reducer = function reducer() {
     default:
       return state;
   }
+}; // ACTIONS
+
+var getRooms = function getRooms() {
+  // console.log("hit here action");
+  return {
+    type: actionTypes.GET_ROOMS
+  };
 };
-
-/* harmony default export */ __webpack_exports__["default"] = (reducer);
-
-/***/ }),
-
-/***/ "./ducks/store.js":
-/*!************************!*\
-  !*** ./ducks/store.js ***!
-  \************************/
-/*! exports provided: initStore */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initStore", function() { return initStore; });
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "redux");
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-devtools-extension */ "redux-devtools-extension");
-/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-thunk */ "redux-thunk");
-/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(redux_thunk__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _reducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./reducer */ "./ducks/reducer.js");
-
-
-
-
-var initStore = function initStore() {
-  var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _reducer__WEBPACK_IMPORTED_MODULE_3__["default"].initialState;
-  return Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducer__WEBPACK_IMPORTED_MODULE_3__["default"], initialState, Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"])(redux_thunk__WEBPACK_IMPORTED_MODULE_2___default.a)));
+var saveBooking = function saveBooking(rooms) {
+  // console.log("hit here action");
+  return {
+    type: actionTypes.SAVE_BOOKING,
+    payload: rooms
+  };
 };
+function toggleChecked(newRooms) {
+  // console.log("action 2: ", newRooms);
+  return {
+    type: actionTypes.TOGGLE_CHECKED,
+    payload: newRooms
+  };
+}
+function initializeStore() {
+  var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : exampleInitialState;
+  return Object(redux__WEBPACK_IMPORTED_MODULE_1__["createStore"])(reducer, initialState, Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_1__["applyMiddleware"])()));
+}
 
 /***/ }),
 
@@ -1069,30 +1193,84 @@ function _typeof(obj) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Booking__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Booking */ "./components/Booking.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_BookingForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/BookingForm */ "./components/BookingForm.js");
+/* harmony import */ var _ducks_store__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ducks/store */ "./ducks/store.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
+
 var _jsxFileName = "/Users/liswafford/Documents/coding/HiltonFinised/assessment2/pages/index.js";
 
 
 
-function Home() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Booking__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }));
-}
 
-/* harmony default export */ __webpack_exports__["default"] = (Home);
+
+var Index =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Index, _React$Component);
+
+  function Index() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Index);
+
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Index).apply(this, arguments));
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {// DISPATCH ACTIONS HERE FROM `mapDispatchToProps`
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_BookingForm__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      });
+    }
+  }], [{
+    key: "getInitialProps",
+    value: function getInitialProps(_ref) {
+      var reduxStore = _ref.reduxStore,
+          req = _ref.req;
+      var isServer = !!req; // DISPATCH ACTIONS HERE ONLY WITH `reduxStore.dispatch`
+
+      reduxStore.dispatch(Object(_ducks_store__WEBPACK_IMPORTED_MODULE_7__["getRooms"])(isServer));
+      return {};
+    }
+  }]);
+
+  return Index;
+}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component); // const mapDispatchToProps = { startClock }
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     saveBooking: () => dispatch(saveBooking()),
+//     toggleChecked: newRooms => dispatch(toggleChecked(newRooms))
+//   };
+// };
+
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    rooms: state.rooms
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])(mapStateToProps // mapDispatchToProps
+)(Index));
 
 /***/ }),
 
@@ -1229,17 +1407,6 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 
 /***/ }),
 
-/***/ "next-redux-wrapper":
-/*!*************************************!*\
-  !*** external "next-redux-wrapper" ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next-redux-wrapper");
-
-/***/ }),
-
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -1248,6 +1415,17 @@ module.exports = require("next-redux-wrapper");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-redux":
+/*!******************************!*\
+  !*** external "react-redux" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-redux");
 
 /***/ }),
 
@@ -1270,17 +1448,6 @@ module.exports = require("redux");
 /***/ (function(module, exports) {
 
 module.exports = require("redux-devtools-extension");
-
-/***/ }),
-
-/***/ "redux-thunk":
-/*!******************************!*\
-  !*** external "redux-thunk" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("redux-thunk");
 
 /***/ }),
 
